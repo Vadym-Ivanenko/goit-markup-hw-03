@@ -40,7 +40,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 4px solid tomato;
+    /* outline: 4px solid tomato; */
 }
 
 .list {
