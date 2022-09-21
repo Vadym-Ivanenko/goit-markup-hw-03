@@ -97,14 +97,13 @@ body {
     padding-bottom: 25px;
 }
 
-.container {
+.main-nav {
     display: flex;
     align-items: center;
 }
 
 .container>nav {
     display: flex;
-    align-items: center;
 }
 
 .header-logo {
@@ -134,7 +133,7 @@ body {
 
 .header-contact-list {
     display: flex;
-    justify-content: flex-end;
+    margin-left: auto;
     padding: 0;
 }
 
@@ -148,7 +147,15 @@ body {
     margin-right: 50px;
 }
 
+.header-nav-item:last-child,
+.header-contact-item:last-child {
+    margin-right: 0;
+}
+
 .header-nav-link {
+    display: block;
+    padding: 7px 0 7px 0;
+    /* Add paddings for expand the field of links */
     color: inherit;
 }
 
@@ -159,6 +166,9 @@ body {
 
 
 .header-contact-link {
+    display: block;
+    padding: 7px 0 7px 0;
+    /* Add paddings for expand the field of links */
     color: var(--third-color);
 }
 
@@ -167,25 +177,33 @@ body {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+
     background: var(--background);
 }
 
 .hero-title {
-    color: var(--second-color);
+    margin: 0 auto;
+    max-width: 696px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--second-color);
 }
 
 .hero-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 32px;
+    border: none;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
 
-    margin-top: 30px;
 
     color: var(--second-color);
     background-color: var(--accent-color);
@@ -239,7 +257,6 @@ body {
     justify-content: space-between;
     padding-left: 0;
     margin-top: 50px;
-
 }
 
 /* -------------------------TEAM-------------------------- */
@@ -283,6 +300,8 @@ body {
 
 /* -------------------------FOOTER -------------------------- */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: var(--background);
 }
 
@@ -291,6 +310,8 @@ body {
 }
 
 .footer-list {
+    margin-top: 20px;
+    padding-left: 0;
     font-style: normal;
 }
 
@@ -300,6 +321,14 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-decoration: none;
+}
+
+.footer-item {
+    margin-top: 9px;
+}
+
+.footer-item:first-child {
+    margin-top: 0;
 }
 
 .footer-contact-link {
