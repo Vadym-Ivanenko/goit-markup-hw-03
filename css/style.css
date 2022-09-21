@@ -97,10 +97,21 @@ body {
     padding-bottom: 25px;
 }
 
-.header .main-nav {
+.container {
     display: flex;
     align-items: center;
 }
+
+.container>nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 93px;
+}
+
+
 
 .logo {
     color: var(--fourth-color);
@@ -123,6 +134,7 @@ body {
 
 .header-contact-list {
     display: flex;
+    justify-content: flex-end;
     padding: 0;
 }
 
@@ -132,6 +144,8 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    margin-right: 50px;
 }
 
 .header-nav-link {
