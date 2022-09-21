@@ -5,6 +5,8 @@
     --fourth-color: #000000;
     --footer-contact-color: rgba(255, 255, 255, 0.6);
     --accent-color: #2196F3;
+    --border-header-color: #ECECEC;
+    --border-color: #EEEEEE;
     --active-btn-color: #188CE8;
     --background-first: #F5F4FA;
     --background: #2F303A;
@@ -35,12 +37,16 @@ body {
     background-color: var(--second-color);
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 4px solid tomato; */
 }
 
 .list {
@@ -95,6 +101,7 @@ body {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-header-color);
 }
 
 .main-nav {
@@ -215,10 +222,6 @@ body {
 }
 
 /* ---------------------------BENEFITS---------------------------- */
-.benefits {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .benefits-list {
     display: flex;
@@ -249,7 +252,7 @@ body {
 /* -----------------------OCCUPATION------------------- */
 .occupation {
     text-align: center;
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 
 .occupation-list {
@@ -263,7 +266,6 @@ body {
 
 .team {
     background-color: var(--background-first);
-    padding: 94px 0;
     text-align: center;
 }
 
@@ -349,7 +351,24 @@ body {
     background-color: inherit;
 }
 
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.portfolio-item {
+    margin-right: 8px;
+}
+
+.portfolio-item:last-child {
+    margin-right: 0;
+}
+
 .portfolio-btn {
+    padding: 6px 22px;
+    border: none;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -357,8 +376,40 @@ body {
     background-color: var(--background-first);
 }
 
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    padding: 6px 25px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
 .portfolio-unit {
     background: var(--second-color);
+}
+
+.portfolio-file {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-left: 0;
+}
+
+.portfolio-unit {
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.portfolio-unit:nth-child(-n+3) {
+    margin-top: 0;
+}
+
+.portfolio-unit:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.portfolio-unit-wrap {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .portfolio-unit-link {
@@ -374,6 +425,8 @@ body {
 }
 
 .portfolio-descr {
+    margin-top: 4px;
+
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
